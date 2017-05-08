@@ -39,7 +39,7 @@ app.get('/', function(request, response) {
 });
 
 app.get('/db', function(request, response) {
-  response.render('pages/db', {results: `result.rows`})
+  response.render('pages/db', {results: [{id: 1, name: 'sdkhg'}]})
 });
 
 app.get('/cool', function(request, response) {
