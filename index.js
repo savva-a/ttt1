@@ -14,6 +14,10 @@ app.get('/', function(request, response) {
   response.render('pages/index')
 });
 
+app.get('/db', function(request, response) {
+  response.render('pages/db')
+});
+
 app.get('/cool', function(request, response) {
   response.send(cool()+ 'kavabango!' );
 });
